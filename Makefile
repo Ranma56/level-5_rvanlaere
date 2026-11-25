@@ -10,11 +10,11 @@ all: $(TARGET) proof
 
 # Rule to build the binary
 $(TARGET): main.c
-    $(CC) $(CFLAGS) -o $@ main.c
+	$(CC) $(CFLAGS) -o $@ main.c
 
 # Clean everything
 clean:
-    rm -f $(TARGET)
+	rm -f $(TARGET)
 
 .PHONY: proof
 proof:
